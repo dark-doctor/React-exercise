@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyparser.json());
 app.use(express.json());
 mongoose.connect(
-  "mongodb+srv://codestranger095_db_user:s1LJPPlViU7BmnAn@cluster0.jbwxeqd.mongodb.net/stockdb?retryWrites=true&w=majority&appName=Cluster0",
+  "mongodb+srv://<username>:<password>@cluster0.jbwxeqd.mongodb.net/<dbname>?retryWrites=true&w=majority&appName=Cluster0",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
