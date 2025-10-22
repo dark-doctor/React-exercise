@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -8,7 +9,7 @@ app.use(cors());
 app.use(bodyparser.json());
 app.use(express.json());
 mongoose.connect(
-  "mongodb+srv://codestranger095_db_user:s1LJPPlViU7BmnAn@cluster0.jbwxeqd.mongodb.net/stockdb?retryWrites=true&w=majority&appName=Cluster0",
+  process.env.MONGODB_URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
