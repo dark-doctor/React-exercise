@@ -9,7 +9,7 @@ const Stocks = ({addToWatchlist}) => {
       .then((data) => setStocks(data))
       .catch((error) => console.error("Error fetching stocks:", error));
   }, []);
-  console.log(setStocks, "Stocksdata");
+  console.log(stocks, "Stocksdata");
   
   const getRandomColor = () => {
     const colors = ["#FF0000", "#00FF00"];
